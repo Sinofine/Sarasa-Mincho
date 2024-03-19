@@ -76,7 +76,7 @@ const Ttc = phony(`ttc`, async t => {
 });
 
 const Ttf = phony(`ttf`, async t => {
-	await t.need(TtfFontFiles`TTF`, TtfFontFiles`TTF-Unhinted`);
+	await t.need(TtfFontFiles`TTF-Unhinted`);
 });
 
 const Dependencies = oracle("oracles::dependencies", async () => {
